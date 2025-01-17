@@ -12,5 +12,6 @@ import com.webapp.blog.entity.Post;
 public interface CommentRepo extends JpaRepository<Comment,Long>{
     
     List<Comment> findByPost(Post post);
+    // PagingAndSortingRepository<T,Id>,CrudRepository<T,Id>,JpaSpecificationExecutor<T>
 
 }
